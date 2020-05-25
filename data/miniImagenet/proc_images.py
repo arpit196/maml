@@ -28,7 +28,7 @@ for subdir, dirs, files in os.walk(rootdir):
         im = im.resize((84, 84), resample=Image.LANCZOS)
         im.save(image_file)
         if i % 500 == 0:
-        print(i)
+            print(i)
 
 # Put in correct directory
 for datatype in ['train', 'val', 'test']:
